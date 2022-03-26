@@ -11,6 +11,9 @@
 		A20839A227CC0F5C005E3C79 /* APIKeyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20839A127CC0F5C005E3C79 /* APIKeyFile.swift */; };
 		A20839A627CC104F005E3C79 /* StockShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20839A527CC104F005E3C79 /* StockShort.swift */; };
 		A20839A827CC13E4005E3C79 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20839A727CC13E4005E3C79 /* StockViewController.swift */; };
+		A262852827D5507400F8677B /* QuoteShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262852727D5507400F8677B /* QuoteShort.swift */; };
+		A2E2B7E827D54D6500ADFC94 /* StockViewTableViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E2B7E727D54D6500ADFC94 /* StockViewTableViewCode.swift */; };
+		A2E2B7EA27D54D8000ADFC94 /* StockViewNetworkFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E2B7E927D54D8000ADFC94 /* StockViewNetworkFunctions.swift */; };
 		A2F692C127CC092100E63A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F692C027CC092100E63A99 /* AppDelegate.swift */; };
 		A2F692C327CC092100E63A99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F692C227CC092100E63A99 /* SceneDelegate.swift */; };
 		A2F692C827CC092100E63A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F692C627CC092100E63A99 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 		A20839A127CC0F5C005E3C79 /* APIKeyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyFile.swift; sourceTree = "<group>"; };
 		A20839A527CC104F005E3C79 /* StockShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockShort.swift; sourceTree = "<group>"; };
 		A20839A727CC13E4005E3C79 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		A262852727D5507400F8677B /* QuoteShort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteShort.swift; sourceTree = "<group>"; };
+		A2E2B7E727D54D6500ADFC94 /* StockViewTableViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewTableViewCode.swift; sourceTree = "<group>"; };
+		A2E2B7E927D54D8000ADFC94 /* StockViewNetworkFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewNetworkFunctions.swift; sourceTree = "<group>"; };
 		A2F692BD27CC092100E63A99 /* StockMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F692C027CC092100E63A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2F692C227CC092100E63A99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				A20839A727CC13E4005E3C79 /* StockViewController.swift */,
+				A2E2B7E727D54D6500ADFC94 /* StockViewTableViewCode.swift */,
+				A2E2B7E927D54D8000ADFC94 /* StockViewNetworkFunctions.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A20839A527CC104F005E3C79 /* StockShort.swift */,
+				A262852727D5507400F8677B /* QuoteShort.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,9 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E2B7E827D54D6500ADFC94 /* StockViewTableViewCode.swift in Sources */,
+				A262852827D5507400F8677B /* QuoteShort.swift in Sources */,
 				A20839A027CC0F51005E3C79 /* URLConstants.swift in Sources */,
 				A20839A827CC13E4005E3C79 /* StockViewController.swift in Sources */,
 				A2F692C127CC092100E63A99 /* AppDelegate.swift in Sources */,
+				A2E2B7EA27D54D8000ADFC94 /* StockViewNetworkFunctions.swift in Sources */,
 				A20839A627CC104F005E3C79 /* StockShort.swift in Sources */,
 				A2F692C327CC092100E63A99 /* SceneDelegate.swift in Sources */,
 				A20839A227CC0F5C005E3C79 /* APIKeyFile.swift in Sources */,

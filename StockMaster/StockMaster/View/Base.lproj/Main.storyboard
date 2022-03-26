@@ -16,27 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jb-vo-OJs">
-                                <rect key="frame" x="100" y="217" width="212" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="add to DB"/>
+                            <searchBar contentMode="redraw" placeholder="search stock symbols" translatesAutoresizingMaskIntoConstraints="NO" id="D2F-uz-f6s">
+                                <rect key="frame" x="0.0" y="88" width="428" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8CM-ct-gV6"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="addDB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7sS-xD-24i"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9Yh-az-Fnx"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzK-Lw-JCQ">
-                                <rect key="frame" x="133" y="328" width="162" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Delete Tesla"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iek-Ur-S4y">
+                                <rect key="frame" x="0.0" y="138" width="428" height="754"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="nda-0b-EEA">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nda-0b-EEA" id="Idz-n9-ycg">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="deleteTSLAStock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLb-QN-6IL"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="U6E-7L-F3z"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wP1-qT-Njl"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iek-Ur-S4y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RuF-dp-Ss2"/>
+                            <constraint firstItem="iek-Ur-S4y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SrK-cS-7n5"/>
+                            <constraint firstItem="D2F-uz-f6s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T6p-SM-kJa"/>
+                            <constraint firstItem="iek-Ur-S4y" firstAttribute="top" secondItem="D2F-uz-f6s" secondAttribute="bottom" id="WtN-yS-spz"/>
+                            <constraint firstItem="iek-Ur-S4y" firstAttribute="top" secondItem="D2F-uz-f6s" secondAttribute="bottom" id="fta-EA-wXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D2F-uz-f6s" secondAttribute="trailing" id="gDP-mK-OPH"/>
+                            <constraint firstItem="D2F-uz-f6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j8g-ce-wBB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iek-Ur-S4y" secondAttribute="trailing" id="lUT-VX-yEv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Stock Master" id="amM-5k-Ddg">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4w8-Ne-Whr">
@@ -45,6 +65,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tblView" destination="iek-Ur-S4y" id="tiT-ca-pB9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
