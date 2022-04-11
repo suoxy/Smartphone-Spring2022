@@ -21,6 +21,9 @@
 		A266D8C828035EB60088600F /* StockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A266D8C628035EB60088600F /* StockTableViewCell.xib */; };
 		A266D8CA280360010088600F /* NetworkFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266D8C9280360010088600F /* NetworkFunctions.swift */; };
 		A266D8CE280366660088600F /* ProtocolSendStockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266D8CD280366660088600F /* ProtocolSendStockData.swift */; };
+		A266D8D12803B4AC0088600F /* SearchStockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266D8CF2803B4AC0088600F /* SearchStockTableViewCell.swift */; };
+		A266D8D22803B4AC0088600F /* SearchStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A266D8D02803B4AC0088600F /* SearchStockTableViewCell.xib */; };
+		A266D8D42803B6F90088600F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A266D8D32803B6F90088600F /* SearchViewController.swift */; };
 		C8EDEFDDA7372086FCF9810E /* Pods_StockPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCFBB23A805EB416CF9EBF7 /* Pods_StockPrice.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		A266D8C628035EB60088600F /* StockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockTableViewCell.xib; sourceTree = "<group>"; };
 		A266D8C9280360010088600F /* NetworkFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFunctions.swift; sourceTree = "<group>"; };
 		A266D8CD280366660088600F /* ProtocolSendStockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolSendStockData.swift; sourceTree = "<group>"; };
+		A266D8CF2803B4AC0088600F /* SearchStockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStockTableViewCell.swift; sourceTree = "<group>"; };
+		A266D8D02803B4AC0088600F /* SearchStockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchStockTableViewCell.xib; sourceTree = "<group>"; };
+		A266D8D32803B6F90088600F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F6ECA98C2363F3A782E407F1 /* Pods-StockPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockPrice.release.xcconfig"; path = "Target Support Files/Pods-StockPrice/Pods-StockPrice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,9 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				A266D8A628034C5A0088600F /* ViewController.swift */,
+				A266D8D32803B6F90088600F /* SearchViewController.swift */,
 				A266D8C128035E270088600F /* TableViewCode.swift */,
 				A266D8C528035EB60088600F /* StockTableViewCell.swift */,
 				A266D8C628035EB60088600F /* StockTableViewCell.xib */,
+				A266D8CF2803B4AC0088600F /* SearchStockTableViewCell.swift */,
+				A266D8D02803B4AC0088600F /* SearchStockTableViewCell.xib */,
 			);
 			path = InitialController;
 			sourceTree = "<group>";
@@ -200,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A266D8AF28034C5B0088600F /* LaunchScreen.storyboard in Resources */,
+				A266D8D22803B4AC0088600F /* SearchStockTableViewCell.xib in Resources */,
 				A266D8AC28034C5B0088600F /* Assets.xcassets in Resources */,
 				A266D8C828035EB60088600F /* StockTableViewCell.xib in Resources */,
 				A266D8AA28034C5A0088600F /* Main.storyboard in Resources */,
@@ -259,7 +269,9 @@
 				A266D8A328034C5A0088600F /* AppDelegate.swift in Sources */,
 				A266D8C728035EB60088600F /* StockTableViewCell.swift in Sources */,
 				A266D8BB280356B20088600F /* CurrentStockModel.swift in Sources */,
+				A266D8D12803B4AC0088600F /* SearchStockTableViewCell.swift in Sources */,
 				A266D8C228035E270088600F /* TableViewCode.swift in Sources */,
+				A266D8D42803B6F90088600F /* SearchViewController.swift in Sources */,
 				A266D8CE280366660088600F /* ProtocolSendStockData.swift in Sources */,
 				A266D8A528034C5A0088600F /* SceneDelegate.swift in Sources */,
 				A266D8BF280358F10088600F /* APIURLsFile.swift in Sources */,

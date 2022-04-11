@@ -25,7 +25,9 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         let stockModel = stocksModel[indexPath.row]
         cell.lblCompanyName.text = stockModel.name
         cell.lblStockSymbol.text = stockModel.symbol
-        
+        if (stockModel.symbol == "") {
+            cell.lblStockSymbol.text = "Invalid"
+        }
         cell.stockQuote = stockModel
         
         cell.sendStockDelegate = self
