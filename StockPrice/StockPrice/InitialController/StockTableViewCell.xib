@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="StockTableViewCell" customModule="StockPrice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="gK8-0f-t1h">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comapny Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5l-eN-WzT">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Symbol" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qg-eX-t5R">
+                                <rect key="frame" x="167" y="0.0" width="120.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upY-pm-8zg">
+                                <rect key="frame" x="314.5" y="0.0" width="104.5" height="72"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Price"/>
+                                <connections>
+                                    <action selector="getPriceAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pky-5Y-5a4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gK8-0f-t1h" secondAttribute="bottom" id="jmY-eF-2Bc"/>
+                    <constraint firstItem="gK8-0f-t1h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jtA-HT-xiC"/>
+                    <constraint firstAttribute="trailing" secondItem="gK8-0f-t1h" secondAttribute="trailing" id="nd5-X6-zOK"/>
+                    <constraint firstItem="gK8-0f-t1h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="o6K-aq-6bU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblCompanyName" destination="V5l-eN-WzT" id="HEL-ba-c2h"/>
+                <outlet property="lblStockSymbol" destination="7qg-eX-t5R" id="xIg-OO-gX9"/>
+            </connections>
+            <point key="canvasLocation" x="-84.782608695652186" y="97.098214285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
