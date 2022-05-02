@@ -61,11 +61,11 @@
 				A237B81C27C41A0400EC3299 /* AppDelegate.swift */,
 				A237B81E27C41A0400EC3299 /* SceneDelegate.swift */,
 				A237B82027C41A0400EC3299 /* ViewController.swift */,
+				A237B83027C41F6300EC3299 /* GetPlanViewController.swift */,
 				A237B82227C41A0400EC3299 /* Main.storyboard */,
 				A237B82527C41A0500EC3299 /* Assets.xcassets */,
 				A237B82727C41A0500EC3299 /* LaunchScreen.storyboard */,
 				A237B82A27C41A0500EC3299 /* Info.plist */,
-				A237B83027C41F6300EC3299 /* GetPlanViewController.swift */,
 			);
 			path = Assignment4;
 			sourceTree = "<group>";
